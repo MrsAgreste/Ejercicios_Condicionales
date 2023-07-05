@@ -109,12 +109,10 @@ body {
 .close:hover p {
     color: #142440;
 }
-#mE1 .modal-content {
+.modal-content {
     background: #130735;
 }
-#mE2 .modal-content {
-    background: #130835;
-}
+
 /* Final diseño modales */
 
 .input-box {

@@ -83,3 +83,62 @@ function Ejercicio3() {
   }
   document.getElementById("answer3").value = "";
 }
+
+// --------------------------------- Cuarto ejercicio ----------------------------------------------
+
+let openModal4 = document.getElementById("openModal4");
+let modal4 = document.getElementById("mE4");
+let closeModal4 = document.getElementById("close4");
+
+openModal4.onclick = function () {
+  modal4.querySelector(".input-box label").style.transition = ".5s";
+  modal4.style.visibility = "visible";
+};
+closeModal4.onclick = function () {
+  modal4.querySelector(".input-box label").style.transition = "0s";
+  modal4.querySelector(".box").innerHTML = "";
+  modal4.style.visibility = "hidden";
+};
+
+function Ejercicio4() {
+  let num = document.getElementById("answer4").value;
+  let numero = Number(num);
+
+  if (numero === 1000) {
+    modal4.querySelector(".box").innerHTML = "Felicidades! Ganaste un premio";
+  } else {
+    modal4.querySelector(".box").innerHTML = "Lo sentimos, sigue participando";
+  }
+  document.getElementById("answer4").value = "";
+}
+
+// --------------------------------- Quinto ejercicio ----------------------------------------------
+
+let openModal5 = document.getElementById("openModal5");
+let modal5 = document.getElementById("mE5");
+let closeModal5 = document.getElementById("close5");
+
+openModal5.onclick = function () {
+  modal5.querySelector(".input-box label").style.transition = ".5s";
+  modal5.style.visibility = "visible";
+};
+closeModal5.onclick = function () {
+  modal5.querySelector(".input-box label").style.transition = "0s";
+  modal5.querySelector(".box").innerHTML = "";
+  modal5.style.visibility = "hidden";
+};
+
+function Ejercicio5() {
+  let num1 = document.getElementById("answer5").value;
+  let num2 = document.getElementById("answer6").value;
+
+  if (Math.min(num1,num2) == num1) {
+    modal5.querySelector(".box").innerHTML = "El primer numero es menor porque "+num1+" es menor que "+num2;
+  }
+  else if (Math.min(num1,num2) == num2) {
+    modal5.querySelector(".box").innerHTML = "El segundo numero es menor porque "+num2+" es menor que "+num1;
+  }
+
+  document.getElementById("answer5").value = "";
+  document.getElementById("answer6").value = "";
+}
