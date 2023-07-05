@@ -112,7 +112,9 @@ body {
 #mE1 .modal-content {
     background: #130735;
 }
-
+#mE2 .modal-content {
+    background: #130835;
+}
 /* Final diseño modales */
 
 .input-box {
@@ -146,8 +148,6 @@ input:not(:placeholder-shown)~label {
     padding: 0 35px 0 5px;
     color: #fff;
 }
-
-
 .modal-box {
     position: relative;
         width: 485px;
@@ -173,7 +173,14 @@ input:not(:placeholder-shown)~label {
     letter-spacing: 2px;
     font-size: 20px;
 }
-#mE1 button {
+.box {
+    padding: 15px;
+        text-decoration:wavy;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 20px;
+}
+.btn-solid {
         width: 90%;
             height: 40px;
             border-radius: 40px;
