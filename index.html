@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
+    <script defer src="js/script.js"></script>
+    <script defer src="js/modales.js"></script>
 
     <!-- Libreria de alertas (sweetalert2) -->
     <script defer src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
@@ -14,7 +15,7 @@
     
     <section class="main">
 
-         <!-- --------------------- Primer modal -------------------- -->
+        <!-- --------------------- Primer modal -------------------- -->
 
         <div id="mE1" class="modal-container">
             <div class="modal-content">
@@ -34,7 +35,7 @@
 
         <button class="btn-submit" id="openModal1">Ejercicio 1</button>
 
-         <!-- --------------------- Segundo modal -------------------- -->
+        <!-- --------------------- Segundo modal -------------------- -->
 
         <div id="mE2" class="modal-container">
             <div class="modal-content">
@@ -55,9 +56,9 @@
 
         <button class="btn-submit" id="openModal2">Ejercicio 2</button>
 
-         <!-- --------------------- Tercer modal -------------------- -->
+        <!-- --------------------- Tercer modal -------------------- -->
 
-                <div id="mE3" class="modal-container">
+        <div id="mE3" class="modal-container">
             <div class="modal-content">
                 <div class="modal-box">
                     <div id="close3" class="close"> <p>X</p> </div>
@@ -74,9 +75,10 @@
         </div>
 
         <button class="btn-submit" id="openModal3">Ejercicio 3</button>
-                 <!-- --------------------- Cuarto modal -------------------- -->
+        
+        <!-- --------------------- Cuarto modal -------------------- -->
 
-                <div id="mE4" class="modal-container">
+        <div id="mE4" class="modal-container">
             <div class="modal-content">
                 <div class="modal-box">
                     <div id="close4" class="close"> <p>X</p> </div>
@@ -94,9 +96,9 @@
 
         <button class="btn-submit" id="openModal4">Ejercicio 4</button>
 
-                         <!-- --------------------- Quinto modal -------------------- -->
+        <!-- --------------------- Quinto modal -------------------- -->
 
-                <div id="mE5" class="modal-container">
+        <div id="mE5" class="modal-container">
             <div class="modal-content">
                 <div class="modal-box">
                     <div id="close5" class="close"> <p>X</p> </div>
@@ -117,12 +119,40 @@
         </div>
 
         <button class="btn-submit" id="openModal5">Ejercicio 5</button>
+
+        <!-- --------------------- Sexto modal -------------------- -->
+
+        <div id="mE6" class="modal-container">
+            <div class="modal-content">
+                <div class="modal-box">
+                    <div id="close6" class="close"> <p>X</p> </div>
+                    <div class="title"></div>
+                <p>Encontrar el numero menor</p>
+                <div class="input-box">
+                    <input type="text" id="answer7" placeholder="" required>
+                <label for=""> Escriba el primer numero</label>
+                </div>
+                <div class="input-box">
+                    <input type="text" id="answer8" placeholder="" required>
+                <label for=""> Escriba el segundo numero</label>
+                </div>
+                <div class="input-box">
+                    <input type="text" id="answer9" placeholder="" required>
+                <label for=""> Escriba el tercer numero</label>
+                </div>
+                <button class="btn-solid"  onclick="Ejercicio6()">Enviar</button>
+                <div class="box"></div>
+                </div>
+            </div>
+        </div>
+
+        <button class="btn-submit" id="openModal6">Ejercicio 6</button>
     
     </section>
 
         
 
-            <div class="container">
+    <div class="container">
       <div class="particles">
         <span style="--i: 11"></span>
         <span style="--i: 12"></span>
