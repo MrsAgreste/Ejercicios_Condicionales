@@ -58,7 +58,7 @@ function Ejercicio4() {
   document.getElementById("answer4").value = "";
 }
 
-// --------------------------------- Quinto ejercicio ----------------------------------------------
+// -------------------------------- Quinto ejercicio --------------------------------------------
 
 function Ejercicio5() {
   let num1 = document.getElementById("answer5").value;
@@ -73,4 +73,95 @@ function Ejercicio5() {
 
   document.getElementById("answer5").value = "";
   document.getElementById("answer6").value = "";
+}
+
+// -------------------------------- Sexto ejercicio --------------------------------------------
+
+function Ejercicio6() {
+  let num1 = document.getElementById("answer7").value;
+  let num2 = document.getElementById("answer8").value;
+  let num3 = document.getElementById("answer9").value;
+
+  if (num1 == num2) {
+    if (Math.max(num1, num3) == num1) {
+      modal6.querySelector(".box").innerHTML =
+        num1 + " es mayor que " + num3;
+    }  else if (Math.max(num1, num3) == num3) {
+      modal6.querySelector(".box").innerHTML = num3 + " es mayor que " + num1;
+    }
+  } else if (num2 == num3) {
+    if (Math.max(num1, num2) == num1) {
+      modal6.querySelector(".box").innerHTML = num1 + " es mayor que " + num2;
+    } else if (Math.max(num1, num2) == num2) {
+      modal6.querySelector(".box").innerHTML = num2 + " es mayor que " + num1;
+    }
+  } else if (num1 == num3) {
+    if (Math.max(num1, num2) == num1) {
+      modal6.querySelector(".box").innerHTML = num1 + " es mayor que " + num2;
+    } else if (Math.max(num1, num2) == num2) {
+      modal6.querySelector(".box").innerHTML = num2 + " es mayor que " + num1;
+    }
+  } else if (Math.max(num1, num2, num3) == num1) {
+    modal6.querySelector(".box").innerHTML =
+      num1 + " es mayor que " + num2 + " y " + num3;
+  } else if (Math.max(num1, num2, num3) == num2) {
+    modal6.querySelector(".box").innerHTML =
+      num2 + " es mayor que " + num1 + " y " + num3;
+  } else if (Math.max(num1, num2, num3) == num3) {
+    modal6.querySelector(".box").innerHTML =
+      num3 + " es mayor que " + num2 + " y " + num1;
+  }
+
+  document.getElementById("answer7").value = "";
+  document.getElementById("answer8").value = "";
+  document.getElementById("answer9").value = "";
+};
+
+function Ejercicio7() {
+  let diaSemana = document.getElementById("answer10").value;
+
+  // if (diaSemana != "lunes" && diaSemana != "viernes" && diaSemana != "sabado" && diaSemana != "domingo") {
+  //   // if (diaSemana == "martes" || diaSemana == "miercoles" || diaSemana == "jueves") {
+  //   //   diaSemana = "diaDistinto";
+  //   // }
+
+  // }
+      // if (diaSemana == "martes") {
+      //    martes = "diaDistinto"
+      //     diaSemana = "diaDistinto";
+      //  }
+      //  diaSemana = martes;
+
+  switch (diaSemana) {
+    case "lunes":
+      modal7.querySelector(".box").innerHTML = "Ánimo! Es lunes de inspiración";
+      break;
+    case "viernes":
+      modal7.querySelector(".box").innerHTML =
+        "Resiste, ya casi es fin de semana y podrás descansar";
+      break;
+    case "sabado":
+      modal7.querySelector(".box").innerHTML =
+        "Descansa, pero no se te olvide hacer la compra de la despensa";
+      break;
+    case "domingo":
+      modal7.querySelector(".box").innerHTML =
+        "Descansa, pero no se te olvide hacer la compra de la despensa";
+      break;
+    case "martes":
+      modal7.querySelector(".box").innerHTML = "Sonríe! :)";
+      break;
+    case "miercoles":
+      modal7.querySelector(".box").innerHTML = "Sonríe! :)";
+      break;
+    case "jueves":
+      modal7.querySelector(".box").innerHTML = "Sonríe! :)";
+      break;
+    default:
+      modal7.querySelector(".box").innerHTML =
+        "No escribió un dia valido, por favor vuelva a intentarlo";
+      break;
+  }
+
+  document.getElementById("answer10").value = "";
 }

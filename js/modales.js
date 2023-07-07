@@ -67,13 +67,18 @@ closeModal4.onclick = function () {
 let openModal5 = document.getElementById("openModal5");
 let modal5 = document.getElementById("mE5");
 let closeModal5 = document.getElementById("close5");
+let labels5 = modal5.querySelectorAll(".input-box label");
 
 openModal5.onclick = function () {
-  modal5.querySelector(".input-box label").style.transition = ".5s";
+  labels5.forEach(element => {
+    element.style.transition = ".5s";
+  });
   modal5.style.visibility = "visible";
 };
 closeModal5.onclick = function () {
-  modal5.querySelector(".input-box label").style.transition = "0s";
+    labels5.forEach((element) => {
+      element.style.transition = "0s";
+    });
   modal5.querySelector(".box").innerHTML = "";
   modal5.style.visibility = "hidden";
 };
@@ -83,17 +88,35 @@ closeModal5.onclick = function () {
 let openModal6 = document.getElementById("openModal6");
 let modal6 = document.getElementById("mE6");
 let closeModal6 = document.getElementById("close6");
+let labels6 = modal6.querySelectorAll(".input-box label");
 
 openModal6.onclick = function () {
-  modal6.querySelector(".input-box label").style.transition = ".5s";
+      labels6.forEach((element) => {
+        element.style.transition = ".5s";
+      });
   modal6.style.visibility = "visible";
 };
 closeModal6.onclick = function () {
-  modal6.querySelector(".input-box label").style.transition = "0s";
+      labels6.forEach((element) => {
+        element.style.transition = "0s";
+      });
   modal6.querySelector(".box").innerHTML = "";
   modal6.style.visibility = "hidden";
 };
 
-// ------------------ Primer modal --------------------------
+// -------------------------- Septimo modal ---------..................-----------------
+let openModal7 = document.getElementById("openModal7");
+let modal7 = document.getElementById("mE7");
+let closeModal7 = document.getElementById("close7");
+
+openModal7.onclick = function () {
+  modal7.querySelector(".input-box label").style.transition = ".5s";
+  modal7.style.visibility = "visible";
+};
+closeModal7.onclick = function () {
+  modal7.querySelector(".input-box label").style.transition = "0s";
+  modal7.querySelector(".box").innerHTML = "";
+  modal7.style.visibility = "hidden";
+};
 // ------------------ Primer modal --------------------------
 // ------------------ Primer modal --------------------------
