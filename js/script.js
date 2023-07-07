@@ -53,7 +53,7 @@ function Ejercicio4() {
   if (numero === 1000) {
     modal4.querySelector(".box").innerHTML = "Felicidades! Ganaste un premio";
   } else {
-    modal4.querySelector(".box").innerHTML = "Lo sentimos, sigue participando";
+    modal4.querySelector(".box").innerHTML = "El numero "+numero+" no ganó. Lo sentimos, sigue participando";
   }
   document.getElementById("answer4").value = "";
 }

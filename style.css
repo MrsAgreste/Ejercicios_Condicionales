@@ -25,6 +25,19 @@ body {
     align-items: center;
     z-index: 1;
 }
+.first-table {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 20px 5px;
+    width: 90%;
+    height: auto;
+    padding: 20px;
+    backdrop-filter: blur(25px);
+    border: 2px solid#fff;
+    border-radius: 20px;
+    color: #fff;
+}
 
 /* Diseño particulas del fondo */
 .container {

@@ -132,4 +132,4 @@ closeModal8.onclick = function () {
   modal8.querySelector(".box").innerHTML = "";
   modal8.style.visibility = "hidden";
 };
-// ------------------ Primer modal --------------------------
+// ----------------------------- Primer modal ----------------------------------
