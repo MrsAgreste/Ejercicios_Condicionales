@@ -119,19 +119,6 @@ function Ejercicio6() {
 
 function Ejercicio7() {
   let diaSemana = document.getElementById("answer10").value;
-
-  // if (diaSemana != "lunes" && diaSemana != "viernes" && diaSemana != "sabado" && diaSemana != "domingo") {
-  //   // if (diaSemana == "martes" || diaSemana == "miercoles" || diaSemana == "jueves") {
-  //   //   diaSemana = "diaDistinto";
-  //   // }
-
-  // }
-      // if (diaSemana == "martes") {
-      //    martes = "diaDistinto"
-      //     diaSemana = "diaDistinto";
-      //  }
-      //  diaSemana = martes;
-
   switch (diaSemana) {
     case "lunes":
       modal7.querySelector(".box").innerHTML = "Ánimo! Es lunes de inspiración";
@@ -162,6 +149,23 @@ function Ejercicio7() {
         "No escribió un dia valido, por favor vuelva a intentarlo";
       break;
   }
-
   document.getElementById("answer10").value = "";
+};
+function Ejercicio8() {
+  let cal = document.getElementById("answer11").value;
+
+  if (cal >= 1 && cal <= 6) {
+    modal8.querySelector(".box").innerHTML = "Reprobado";
+  } else if (cal > 6 && cal <= 8) {
+    modal8.querySelector(".box").innerHTML = "Regular";
+  } else if (cal == 9) {
+    modal8.querySelector(".box").innerHTML = "Bien";
+  } else if (cal == 10) {
+    modal8.querySelector(".box").innerHTML = "Excelente";
+  } else {
+    modal8.querySelector(".box").innerHTML = "No escribió una calificación válida";
+  }
+
+  document.getElementById("answer11").value = "";
+
 }

@@ -118,5 +118,18 @@ closeModal7.onclick = function () {
   modal7.querySelector(".box").innerHTML = "";
   modal7.style.visibility = "hidden";
 };
-// ------------------ Primer modal --------------------------
+// ------------------------- Octavo modal ------------------------------------
+let openModal8 = document.getElementById("openModal8");
+let modal8 = document.getElementById("mE8");
+let closeModal8 = document.getElementById("close8");
+
+openModal8.onclick = function () {
+  modal8.querySelector(".input-box label").style.transition = ".5s";
+  modal8.style.visibility = "visible";
+};
+closeModal8.onclick = function () {
+  modal8.querySelector(".input-box label").style.transition = "0s";
+  modal8.querySelector(".box").innerHTML = "";
+  modal8.style.visibility = "hidden";
+};
 // ------------------ Primer modal --------------------------

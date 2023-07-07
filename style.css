@@ -207,3 +207,6 @@ input:not(:placeholder-shown)~label {
     grid-template-columns: 50% 50%;
     grid-template-rows: 50% 50%;
 }
+form {
+    width: 100%;
+}
