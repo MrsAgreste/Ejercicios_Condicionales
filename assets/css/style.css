@@ -230,3 +230,12 @@ input:not(:placeholder-shown)~label {
 form {
     width: 100%;
 }
+.reverse {
+    position: relative;
+    margin: 15px;
+    padding: 5px;
+    top: 40%;
+    font-size: 40px;
+    color: #fff;
+
+}

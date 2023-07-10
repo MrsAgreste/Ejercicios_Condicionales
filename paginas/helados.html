@@ -1,11 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/helados.css" />
+    <script defer src="../js/helados.js"></script>
+
+    <!-- Fuente de letras -->
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+
+        <!-- Libreria de Font Awesome (Iconos) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Helados</title>
+  </head>
+  <body>
+    <section class="main">
+      <p class="title">Bienvenido</p>
+      <p>Escoja como quiere su helado</p>
+      <select name="topping" id="topping">
+        <option selected disabled>-----Seleccione una opción ------</option>
+        <option value="sin topping" onclick="imprimirCosto()">Sin Topping</option>
+        <option value="Oreo" onclick="imprimirCosto()">Topping de oreo</option>
+        <option value="Kitkat" onclick="imprimirCosto()">Topping de kitkat</option>
+        <option value="Brownie" onclick="imprimirCosto()">Topping de brownie</option>
+      </select>
+
+      <div class="box"></div>
+
+      <p>Modificar disponibilidad de topping</p>
+      <div class="options">
+        <div class="checkbox-box">
+          <input
+            type="checkbox"
+            name="checkbox-1"
+            id="checkbox-1"
+            value="Oreo agotado"
+          />
+          <label for="checkbox-1">Agotar topping de oreo</label>
+        </div>
+        <div class="checkbox-box">
+          <input
+            type="checkbox"
+            name="checkbox-2"
+            id="checkbox-2"
+            value="Kitkat agotado"
+          />
+          <label for="checkbox-2">Agotar topping de kitkat</label>
+        </div>
+        <div class="checkbox-box">
+          <input
+            type="checkbox"
+            name="checkbox-3"
+            id="checkbox-3"
+            value="Brownie agotado"
+          />
+          <label for="checkbox-3">Agotar topping de brownie</label>
+        </div>
+      </div>
+      <div class="reverse-container">
+        <a href="../index.html" class="reverse">
+        <i class="fa-regular fa-circle-left fa-beat"></i>
+      </a>
+      </div>
+
+
+    </section>
+  </body>
 </html>
