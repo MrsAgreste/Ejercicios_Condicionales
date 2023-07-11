@@ -1,40 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../assets/css/combustible.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/combustible.css" />
     <script src="../js/combustible.js"></script>
     <title>Combustible</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <section class="main">
-        <div class="right-container">
-            <h1>Bienvenido</h1>
-            <p class="title1">Seleccione su tipo de transporte</p>
-            <select name="transporte" id="transporte">
-                <option selected disabled> ---------- Seleccione una opción ---------- </option>
-                <option value="moto"> Motocicleta</option>
-                <option value="carro"> Automóvil</option>
-                <option value="bus"> Autobús</option>
-            </select>
-            <div class="input-box">
-                            <input type="number" name="litros" id="litros">
-            <label for="litros">Litros consumidos:</label>
-            </div>
-            <div class="input-box">
-                            <input type="number" name="kilometros" id="kilometros">
-            <label for="kilometros">Km recorridos</label>
-            </div>
-            <button onclick="CalcularCosto()"> Calcular costo total</button>
-            <div class="box"></div>
+      <div class="right-container">
+        <h1>Bienvenido</h1>
+        <p class="title1">Seleccione su tipo de transporte</p>
+        <select name="transporte" id="transporte">
+          <option selected disabled>
+            ---------- Seleccione una opción ----------
+          </option>
+          <option value="moto">Motocicleta</option>
+          <option value="carro">Automóvil</option>
+          <option value="bus">Autobús</option>
+        </select>
+        <div class="input-box">
+          <label for="kilometros">Kilometros recorridos:</label>
+          <input type="number" name="kilometros" id="kilometros" />
+                    <label for="litros">Litros consumidos:</label>
+          <input type="number" name="litros" id="litros" />
         </div>
-        <div class="left-container">
-            <img src="../assets/img/gasolinera.png" alt="Icono de gasolinera">
-        </div>
-        
+        <button onclick="CalcularCosto()">Calcular costo total</button>
+        <div class="box"></div>
+      </div>
+      <div class="left-container">
+        <img src="../assets/img/gasolinera.png" alt="Icono de gasolinera" />
+      </div>
     </section>
-    
-</body>
+  </body>
 </html>
