@@ -23,6 +23,7 @@ El topping de oreo cuesta 10 MXN.
 El topping de KitKat cuesta 15 MXN.
 El topping de brownie cuesta 20 MXN.
 En caso de no disponer del topping solicitado por el usuario, el programa le indicará “no tenemos este topping, lo sentimos.” y a continuación le informará el precio del helado sin ningún topping.
+
 10. Un conocido portal de educación en tecnología está ofreciendo programas para aprender a desarrollar aplicaciones. Escribe un programa que le indique a la persona interesada cuánto deberá pagar mensualmente de acuerdo a la opción elegida.
 El programa educativo contempla 3 diferentes niveles, cada uno con su costo mensual: Course: $4999 MXN
 Carrera $3999 MXN
